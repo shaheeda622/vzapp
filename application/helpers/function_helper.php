@@ -69,5 +69,25 @@ function crashbug($val){
   die();
 }
 
+function get_field($name, $index = FALSE){
+  $return_value = '';
+  if($index === FALSE){
+    $return_value = isset($_SESSION['start_form'][$name]) ? $_SESSION['start_form'][$name] : '';
+  }
+  else{
+    $return_value = isset($_SESSION['start_form'][$name][$index]) ? $_SESSION['start_form'][$name][$index] : '';
+  }
+  return $return_value;
+}
+
+function set_field($name, $value, $index = FALSE){
+  if($index === FALSE){
+    $_SESSION['start_form'][$name] = $value;
+  }
+  else{
+    $_SESSION['start_form'][$name][$index] = $value;
+  }
+}
+
 /* End of file lang_url_helper.php */
 /* Location: ./application/helper/lang_url_helper.php */

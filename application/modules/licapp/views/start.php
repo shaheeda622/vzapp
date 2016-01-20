@@ -10,16 +10,16 @@ if($la_name){
 }
 ?>
 <div class="col-md-12">
-    
+
   <div class="page-header" style="max-height:53px; ">
-    <h2 class="h3" style="line-height:53px;">LICENSE APPLICATION FORM </h3>
+    <h3 class="h3" style="line-height:53px;">LICENSE APPLICATION FORM </h3>
   </div>
-      
+
   <div class="row">
     <div class="col-md-12">
       <div class="dashboard-blk">
-       
-          <!-- 
+
+          <!--
           <header class="headerdiv startPage">
           <div style="padding: 5px 0px;">
             <div class="row app_header">
@@ -34,8 +34,8 @@ if($la_name){
             </div>
           </div>
         </header>
-         --> 
-          
+         -->
+
 
         <div class="clearfix"></div>
 
@@ -85,7 +85,7 @@ if($la_name){
                     <a target="_blank" href="form/vz-terms-and-conditions.php">Terms & Conditions</a> and
                     <a target="_blank" href="form/vz-price-list.php">Price List</a>.
                   </p>
-                  <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                  <input type="submit" name="submit" class="submit action-button" data-link="<?php echo url('licapp/submit');?>" value="Submit" />
                   <input type="button" name="previous" class="previous action-button" value="Previous" />
                 </fieldset>
               </form>

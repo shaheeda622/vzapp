@@ -44,8 +44,6 @@ class licapp extends MX_Controller{
     $la_name = $_GET['la_name'];
     $response = array('status' => 'success', 'la_name' => $la_name);
 
-    include __DIR__ . '/../views/form/myfunctions.php';
-
     $licence_app = array(
         'la_name' => $la_name,
         'la_company_name' => get_field('question4', 'option1'),
@@ -79,7 +77,7 @@ class licapp extends MX_Controller{
           'sh_nationality' => get_field('ind_nationality', $i),
           'sh_pass_id' => get_field('ind_pass_id', $i),
           'sh_pass_issue_d' => get_field('ind_pid', $i),
-          'sh_designation' => get_field('ind_designation', $i),
+          'sh_designation' => get_field('ind_dDesig', $i),
           'sh_uae_resident' => get_field('ind_uae_resident', $i) == 'Yes' ? 1 : 0,
           'sh_uae_stamp' => get_field('ind_uae_stamp', $i) == 'Yes' ? 1 : 0,
           'sh_per_o_sha' => get_field('ind_per_o_sha', $i),
@@ -285,6 +283,10 @@ class licapp extends MX_Controller{
 
   public function start(){
     $this->load->view('start');
+  }
+
+  public function submit(){
+    echo modules::run('_main/render', $this->load->view('form/application', '', TRUE));
   }
 
 }

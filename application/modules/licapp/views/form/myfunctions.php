@@ -4,26 +4,6 @@ function curPageName(){
   return substr($_SERVER["SCRIPT_NAME"], strrpos($_SERVER["SCRIPT_NAME"], "/") + 1);
 }
 
-function get_field($name, $index = FALSE){
-  $return_value = '';
-  if($index === FALSE){
-    $return_value = isset($_SESSION['start_form'][$name]) ? $_SESSION['start_form'][$name] : '';
-  }
-  else{
-    $return_value = isset($_SESSION['start_form'][$name][$index]) ? $_SESSION['start_form'][$name][$index] : '';
-  }
-  return $return_value;
-}
-
-function set_field($name, $value, $index = FALSE){
-  if($index === FALSE){
-    $_SESSION['start_form'][$name] = $value;
-  }
-  else{
-    $_SESSION['start_form'][$name][$index] = $value;
-  }
-}
-
 function load_data_from_db($db_credentials, $la_name){
   $mysqli = mysqli_connect($db_credentials['host'], $db_credentials['username'], $db_credentials['password'], $db_credentials['database']);
   if($mysqli->connect_errno){
@@ -65,14 +45,14 @@ function load_data_from_db($db_credentials, $la_name){
         set_field('ind_sh_fpo', $shareholder['sh_fpoc'] ? 'Yes' : '', $i);
         set_field('ind_sh_gen', $shareholder['sh_gender'], $i);
         set_field('ind_sh_mar', $shareholder['sh_marital_status'], $i);
-        set_field('ind_sh_child', $shareholder['sh_children'], $i);
+        set_field('ind_sh_child', $shareholder['sh_children'] ? 'Yes' : 'No', $i);
         set_field('ind_sh_title', $shareholder['sh_title'], $i);
-        set_field('ind_sh_first_name', $shareholder['sh_first_name'], $i);
-        set_field('ind_sh_middle_name', $shareholder['sh_middle_name'], $i);
-        set_field('ind_sh_last_name', $shareholder['sh_last_name'], $i);
+        set_field('ind_first_name', $shareholder['sh_first_name'], $i);
+        set_field('ind_middle_name', $shareholder['sh_middle_name'], $i);
+        set_field('ind_last_name', $shareholder['sh_last_name'], $i);
         set_field('ind_dob', $shareholder['sh_dob'], $i);
         set_field('ind_nationality', $shareholder['sh_nationality'], $i);
-        set_field('ind_designation', $shareholder['sh_designation'], $i);
+        set_field('ind_dDesig', $shareholder['sh_designation'], $i);
         set_field('ind_pass_id', $shareholder['sh_pass_id'], $i);
         set_field('ind_pid', $shareholder['sh_pass_issue_d'], $i);
         set_field('ind_ped', $shareholder['sh_ped'], $i);
@@ -82,7 +62,7 @@ function load_data_from_db($db_credentials, $la_name){
 
         set_field('ind_per_o_sha', $shareholder['sh_per_o_sha'], $i);
         set_field('ind_val_p_sha', $shareholder['sh_val_p_sha'], $i);
-        set_field('ind_no_shares', $shareholder['sh_no_shares'], $i);
+        set_field('ind_num_o_sha', $shareholder['ind_num_o_sha'], $i);
         set_field('ind_val_of_sha', $shareholder['sh_val_of_sha'], $i);
 
         set_field('ind_ad_street', $shareholder['sh_ad_street'], $i);

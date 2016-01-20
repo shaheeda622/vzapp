@@ -47,7 +47,7 @@ if($app_type == 'Both' || $app_type == 'Individual'){
 ob_start();
 $for_pdf = TRUE;
 if(!$is_download){
-  echo '<form id="final_form" method="post" action="application.php?download=true">';
+  echo '<form id="final_form" method="post" action="' . url('licapp/submit?download=true') . '">';
 }
 $app_page = 1;
 
@@ -61,9 +61,9 @@ if(!$is_download){
 echo '<script type="text/javascript"></script>';
 $buffer = ob_get_contents();
 @ob_end_clean();
-file_put_contents(__DIR__ . '/forpdf.html', $buffer);
+file_put_contents(FCPATH . '/forpdf.html', $buffer);
 if(!$is_download){
-  $link = 'application.php?download=true';
+  $link = url('licapp/submit?download=true');
 }
 else{
   require 'pdfcrowd.php';
@@ -85,13 +85,7 @@ else{
 
     // send the generated PDF
     echo $pdf;
-
-
-             //        $pdf = new Htm2PdfApi (405, 'YTBLYCavAbVq');  // replace youruserid and 'yourapikey' with your own data
-            //
-           //	// basic usage example - this is how you convert Google to PDF and display the PDF to the user
-          //	$pdf->CreateFromURL ('http://www.vzonlineapplications.com/form/forpdf.html');
-         //	$pdf->Display();
+    exit;
   }
   catch(PdfcrowdException $why){
     echo "Pdfcrowd Error: " . $why;

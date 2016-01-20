@@ -1,5 +1,5 @@
-<form id="final_form" method="post" action="application.php?download=true"><!DOCTYPE html>
-  <html lang="en">
+<form id="final_form" method="post" action="/vzapp/en/licapp/submit?download=true"><!DOCTYPE html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -14,15 +14,9 @@
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
     <link href="/vzapp//licappres/form/css/styles.css" rel="stylesheet">
-    <script src="/vzapp//licappres/form/js/jquery.js"></script>
-    <script src="/vzapp//licappres/form/js/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="/vzapp//licappres/form/css/font-awesome-4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/vzapp//licappres/form/formhelpers/dist/css/bootstrap-formhelpers.min.css">
-    <script src="/vzapp//licappres/form/formhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
-    <script src="/vzapp//licappres/form/formhelpers/js/lang/en_US/bootstrap-formhelpers-countries.en_US.js"></script>
-    <script src="/vzapp//licappres/form/formhelpers/js/bootstrap-formhelpers-countries.js"></script>
-  </head>
+      </head>
 <body>
 
 
@@ -30,22 +24,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       APPLICATION FORM </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #fdcf08; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -113,7 +107,7 @@
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 01 / 09 </td>
+          <td> 01 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -158,22 +152,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       APPLICATION FORM </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #fdcf08; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -209,7 +203,7 @@
       <div class="col-xs-12 col-sm-11">
         <label>
           <input type="checkbox" value="FZE" name="company_type" 
-          disabled  />
+          checked disabled  />
           <span>Free Zone Establishment (One Shareholder only)</span>
         </label>
       </div>
@@ -229,7 +223,7 @@
           <input type="checkbox"  value="Branch" name="company_type" 
           disabled />
           <span>Branch (Branch of a local or foreign company)</span>
-          <input type="hidden" value="" name="Company_Type__c">
+          <input type="hidden" value="FZE" name="Company_Type__c">
         </label>
       </div>
       
@@ -250,12 +244,33 @@
       <div class="col-xs-12 col-sm-2">
       <label class="control-label" style="margin-left:15px;">OPTION 1</label></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
       
-      <div class="col-xs-12 col-sm-4"><input  class="form-control" type="text" name="question4[option1]" value="" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+      <div class="col-xs-12 col-sm-4"><input  class="form-control" type="text" name="question4[option1]" value="Khan" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
       <div class="col-sm-2">&nbsp;</div>
       
       <div class="col-xs-12 col-sm-4"><input dir="rtl" lang="ar" class="form-control" type="text" name="question4[option12]" value="" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
 
-                </div>
+              <div class="visible-*-block">&nbsp;</div>
+        <div class="col-xs-12 col-sm-2"><label class="control-label" style="margin-left:15px;">OPTION 2</label></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        
+        
+        
+        <div class="col-xs-12 col-sm-4"><input  class="form-control" type="text" name="question4[option2]" value="Companu" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        <div class="col-sm-2"></div>
+        
+        <div class="col-xs-12 col-sm-4"><input dir="rtl" lang="ar" class="form-control" type="text" name="question4[option22]" value="" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        
+                    <div class="visible-*-block">&nbsp;</div>
+        <div class="col-xs-12 col-sm-2"><label class="control-label" style="margin-left:15px;">OPTION 3</label>
+        </div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        
+        <div class="col-xs-12 col-sm-4"><input dir="rtl" lang="ar" class="form-control" type="text" name="question4[option3]" value="And company" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        
+        <div class="col-sm-2
+        "></div>
+        
+        <div class="col-xs-12 col-sm-4"><input class="form-control" type="text" name="question4[option32]" value="" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+        
+          </div>
   </div>
                 
                 
@@ -269,7 +284,7 @@
     <div class="row section_body form-horizontal">
             <div class="col-xs-12 ptxt">Please indicate the desired company activity.</div><div class="visible-*-block">&nbsp;</div>
       <div class="col-xs-12 col-sm-2"><label class="control-label" style="margin-left:10px;">Activity 1</label></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
-      <div class="col-xs-12 col-sm-4"><input class="form-control" name="activity[1]" type="text" value="" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
+      <div class="col-xs-12 col-sm-4"><input class="form-control" name="activity[1]" type="text" value="Media Support Services" /></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
       <div class="col-xs-12 col-sm-2"><label class="control-label" style="margin-left:10px;">Activity 2</label></div><div class="visible-xs-block hidden-sm hidden-md hidden-lg">&nbsp;</div>
       <div class="col-xs-12 col-sm-4"><input class="form-control" name="activity[2]" type="text" value="" /></div><div class="visible-*-block hidden-lg">&nbsp;</div>
                 </div>
@@ -287,16 +302,16 @@
       <div class="col-xs-12 col-sm-11">
         <label>
           <input type="checkbox" value="100,000" name="share_capital_chk" id="share_capital_chk"
-          disabled  />
+          checked disabled  />
           <span>Standard share capital of AED 100, 000.</span>
         </label>
         	<br/>
         <label>
           <input type="checkbox" value="150,000" name="share_capital_llc" id="share_capital_llc" 
-          checked disabled   /> 
+          disabled   /> 
           <span>Standard share capital of AED 150, 000.</span>
         </label>
-			<input type="hidden" value="" name="share_capital">
+			<input type="hidden" value="100,000" name="share_capital">
       </div>
     </div>
   </div>
@@ -314,7 +329,7 @@
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 02 / 09 </td>
+          <td> 02 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -359,22 +374,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       APPLICATION FORM </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #fdcf08; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -395,7 +410,7 @@
         <div class="col-xs-8 col-sm-4">Shareholder is also Person in Charge</div>
         <div class="col-xs-4 col-sm-2">
           <label>
-            <input type="checkbox" class="checkme check input_checkbox" value="Yes" name="ind_sh_inch[]"             />
+            <input type="checkbox" class="checkme check input_checkbox" value="Yes" name="ind_sh_inch[]" checked             />
             <span>Yes</span>
           </label>
           <label>
@@ -407,7 +422,7 @@
         <div class="col-xs-10 col-sm-4">Shareholder is also First Point of Contact</div>
         <div class="col-xs-2 col-sm-2">
           <label>
-            <input type="checkbox" class="checkme check input_checkbox" value="Yes" name="ind_sh_fpo[]" />
+            <input type="checkbox" class="checkme check input_checkbox" value="Yes" name="ind_sh_fpo[]" checked />
             <span>Yes</span>
           </label>
           <label>
@@ -427,7 +442,7 @@
           <label class="col-xs-12 col-sm-2 control-label text-left">Gender</label>
           <div class="col-xs-12 col-sm-2">
             <label>
-              <input type="checkbox" class="checkme check input_checkbox" name="ind_sh_gen[]" value="Male" />
+              <input type="checkbox" class="checkme check input_checkbox" name="ind_sh_gen[]" value="Male" checked />
               <span class="gender_cl">Male</span>
             </label>
             <label>
@@ -440,7 +455,7 @@
           <label class="col-xs-12 col-sm-2  text-left">Marital Status</label>
           <div class="col-xs-12 col-sm-3">
           	 
-            <label><input type="checkbox" class="check input_checkbox" name="ind_sh_mar[]" value="Married" /><span>Married</span></label>
+            <label><input type="checkbox" class="check input_checkbox" name="ind_sh_mar[]" value="Married" checked /><span>Married</span></label>
             <label><input type="checkbox" class="check input_checkbox" name="ind_sh_mar[]" value="Single" /><span>Single</span></label>
             <label><input type="checkbox" class="check input_checkbox" name="ind_sh_mar[]" value="Divorced" /><span>Divorced</span></label>
             <label class="error" style="display: none;">This field is required.</label>
@@ -448,7 +463,7 @@
           
           <label class="col-xs-12 col-sm-1 text-left">Children</label>
           <div class="col-xs-12 col-sm-2">
-            <label><input type="checkbox" class="check input_checkbox" name="ind_sh_child[]" value="Yes" /><span>Yes</span></label>
+            <label><input type="checkbox" class="check input_checkbox" name="ind_sh_child[]" value="Yes" checked /><span>Yes</span></label>
             <label><input type="checkbox" class="check input_checkbox" name="ind_sh_child[]" value="No" /><span>No</span></label>
             <label class="error" style="display: none;">This field is required.</label>
           </div>
@@ -466,7 +481,7 @@
                             <option value="Mr.">Mr.</option>
                             <option value="Mrs.">Mrs.</option>
                             <option value="Ms.">Ms.</option>
-                            <option value="Dr.">Dr.</option>
+                            <option value="Dr." selected>Dr.</option>
                             <option value="Prof.">Prof.</option>
                           </select>
           </div>
@@ -476,7 +491,7 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">First Name</label>
           <div class="col-xs-12 col-sm-2">
-            <input id="ind_firstname1" type="text" class="form-control validate required" name="ind_first_name[]" value="" />
+            <input id="ind_firstname1" type="text" class="form-control validate required" name="ind_first_name[]" value="fasdf" />
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
 
@@ -488,7 +503,7 @@
 
           <label class="col-xs-12 col-sm-2 control-label text-left">Last Name</label>
           <div class="col-xs-12 col-sm-2">
-            <input id="ind_lastname1" type="text" class="form-control validate required" name="ind_last_name[]" value="" />
+            <input id="ind_lastname1" type="text" class="form-control validate required" name="ind_last_name[]" value="sdfasd" />
           </div>
           <div class="col-xs-12 col-sm-12 help-block">
           <label class="col-xs-12 col-sm-2 control-label text-left"></label>
@@ -500,7 +515,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label text-left">Date of Birth</label>
           <div class="col-sm-2">
-            <input id="ind_dob1"  class="form-control datepicker validate required" type="text" name="ind_dob[]" value="" />
+            <input id="ind_dob1"  class="form-control datepicker validate required" type="text" name="ind_dob[]" value="05/01/2016" />
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-sm-2 control-label text-left" >Nationality</label>
@@ -509,7 +524,7 @@
           </div>
 
           <label class="col-sm-2 control-label text-left">Passport/ID Number</label>
-          <div class="col-sm-2"><input type="text" class="form-control validate required" name="ind_pass_id[]" value="" /></div>
+          <div class="col-sm-2"><input type="text" class="form-control validate required" name="ind_pass_id[]" value="fsdfsa" /></div>
 
         </div>
 
@@ -517,7 +532,7 @@
           <label class="col-xs-12 col-sm-2 control-label text-left">Designation</label>
           <div class="col-xs-12 col-sm-6">
             <input type="text" class="form-control validate required" name="ind_dDesig[]"
-            value="" />
+            value="afdsf" />
             <p class="text-left help-block">(Please indicate desired Designation in company under formation)</p>
           </div>
           <div class="col-xs-12 col-sm-4 control-label text-left help-block">
@@ -531,7 +546,7 @@
 
             <!--<div class="bfh-datepicker" data-name="ind_pid[]" data-date=""></div>-->
 
-                <input id="ind_pid1"  class="form-control datepicker validate required" type="text" name="ind_pid[]" value="" />
+                <input id="ind_pid1"  class="form-control datepicker validate required" type="text" name="ind_pid[]" value="28/12/2015" />
 
           </div>
 
@@ -541,7 +556,7 @@
 
             <!--<div class="bfh-datepicker" data-name="ind_ped[]" data-date=""></div>-->
 
-            <input id="ind_ped1"  class="form-control datepicker validate required" type="text" name="ind_ped[]" value="" />
+            <input id="ind_ped1"  class="form-control datepicker validate required" type="text" name="ind_ped[]" value="12/01/2016" />
 
           </div>
         </div>
@@ -555,7 +570,7 @@
           <div class="col-sm-4">
               
               <label>
-              <input type="checkbox" value="Yes" class="checkme check input_checkbox" name="ind_uae_resident[]" /><span>Yes</span>
+              <input type="checkbox" value="Yes" class="checkme check input_checkbox" name="ind_uae_resident[]" checked /><span>Yes</span>
             </label>
               
             <label>
@@ -574,7 +589,7 @@
             <div class="col-sm-4">
                 
             <label>
-              <input type="checkbox" value="Yes" class="checkme check input_checkbox" name="ind_uae_stamp[]" /><span>Yes</span>
+              <input type="checkbox" value="Yes" class="checkme check input_checkbox" name="ind_uae_stamp[]" checked /><span>Yes</span>
             </label>
                 
             <label>
@@ -598,7 +613,7 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Percentage of Shares</label>
-          <div class="col-xs-12 col-sm-2"><input id="ind_per_o_sha1" type="text" name="ind_per_o_sha[]" class="form-control validate required number" data-max="100" maxlength="3" data-svalue="" value=""  placeholder="%" /></div>
+          <div class="col-xs-12 col-sm-2"><input id="ind_per_o_sha1" type="text" name="ind_per_o_sha[]" class="form-control validate required number" data-max="100" maxlength="3" data-svalue="100" value="100"  placeholder="%" /></div>
 
           <div class="col-xs-12 col-sm-1">&nbsp;</div>
           <label class="col-xs-12 col-sm-3 control-label text-left">Value per Shares</label>
@@ -608,11 +623,11 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Number of Shares</label>
-          <div class="col-xs-12 col-sm-2"><input id="ind_no_shares1" type="text" class="form-control number_of_shares" name="ind_num_o_sha[]" value=""  /></div>
+          <div class="col-xs-12 col-sm-2"><input id="ind_no_shares1" type="text" class="form-control number_of_shares" name="ind_num_o_sha[]" value="100"  /></div>
 
           <div class="col-xs-12 col-sm-1">&nbsp;</div>
           <label class="col-xs-12 col-sm-3 control-label text-left">Value of Shares</label>
-          <div class="col-xs-12 col-sm-4"><input type="text" class="form-control number" name="ind_val_of_sha[]" value=""  placeholder="AED" /></div>
+          <div class="col-xs-12 col-sm-4"><input type="text" class="form-control number" name="ind_val_of_sha[]" value="150,000.00"  placeholder="AED" /></div>
         </div>
       </fieldset>
 
@@ -625,7 +640,7 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
           <div class="col-xs-12 col-sm-10">
-            <input id="ind_ad_street1" type="text" class="form-control cad validate required" name="ind_ad_street[]" value=""  /></div>
+            <input id="ind_ad_street1" type="text" class="form-control cad validate required" name="ind_ad_street[]" value="fasdfsa"  /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
@@ -633,30 +648,30 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
           <div class="col-xs-12 col-sm-2">
-            <input id="ind_ad_zip1"  type="text" class="form-control cad" name="ind_ad_postal[]" value=""  />
+            <input id="ind_ad_zip1"  type="text" class="form-control cad" name="ind_ad_postal[]" value="fsdaf"  />
           </div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
           <div class="col-xs-12 col-sm-3">
-            <input id="ind_ad_state1"  type="text" class="form-control cad" name="ind_ad_state[]" value=""   />
+            <input id="ind_ad_state1"  type="text" class="form-control cad" name="ind_ad_state[]" value="fsadfds"   />
           </div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
           <div class="col-sm-3">
-            <input id="ind_ad_city1" type="text" class="form-control cad validate required" value="" name="ind_ad_city[]"  />
+            <input id="ind_ad_city1" type="text" class="form-control cad validate required" value="asdff" name="ind_ad_city[]"  />
           </div>
 
         </div>
         <div class="form-group">
 
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input id="ind_ad_mobile1"  type="text" class="form-control cad validate required number" name="ind_ad_mobile[]" value=""  /></div>
+          <div class="col-xs-12 col-sm-2"><input id="ind_ad_mobile1"  type="text" class="form-control cad validate required number" name="ind_ad_mobile[]" value="421414"  /></div>
           
             <div class="visible-xs-block hidden-*">&nbsp;</div>
             
             <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input id="ind_ad_email1"  type="text" class="form-control cad validate required email" name="ind_ad_email[]" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input id="ind_ad_email1"  type="text" class="form-control cad validate required email" name="ind_ad_email[]" value="dsad@admin.com"  /></div>
 
 
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
@@ -693,7 +708,7 @@
           <legend class="legend_cl">
             Permanent Address <span class="help-inline">(Mandatory for Non-Resident Applicant)</span>&nbsp;&nbsp;
 
-            <label><input type="checkbox" value="Yes" name="ind_p_ad_same[]" class="ind_p_ad_same" />
+            <label><input type="checkbox" value="Yes" name="ind_p_ad_same[]" class="ind_p_ad_same" checked />
             		<span class="graycolor">Same as Correspondence Address</span></label>
             </legend>
 
@@ -703,21 +718,21 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
-          <div class="col-xs-12 col-sm-10"><input type="text"  id="ind_p_street1" class="form-control pad validate required" name="ind_p_street[]" value="" /></div>
+          <div class="col-xs-12 col-sm-10"><input type="text"  id="ind_p_street1" class="form-control pad validate required" name="ind_p_street[]" value="fasdfsa" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="ind_p_postal[]" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="ind_p_postal[]" value="fsdaf" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="ind_p_state[]" value="" /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="ind_p_state[]" value="fsadfds" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
-          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="ind_p_city[]" value="" /></div>
+          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="ind_p_city[]" value="asdff" /></div>
 
         </div>
 
@@ -727,10 +742,10 @@
         <div class="visible-xs-block hidden-*">&nbsp;</div>
           
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="ind_p_mobile[]" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="ind_p_mobile[]" value="421414" /></div>
             
             <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="ind_p_email[]" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="ind_p_email[]" value="dsad@admin.com"  /></div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
           <div class="col-xs-12 col-sm-3">
@@ -787,7 +802,7 @@
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 03 / 09 </td>
+          <td> 03 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -832,22 +847,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       APPLICATION FORM </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #fdcf08; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -885,7 +900,7 @@
           <div class="col-xs-12 col-sm-2">
             <label>
               <input type="checkbox" name="pic_sh_gen" class="checkme" 
-              value="Male" /><span>Male</span>
+              value="Male" checked /><span>Male</span>
             </label>
             <label>
               <input type="checkbox" name="pic_sh_gen" class="checkme" 
@@ -896,7 +911,7 @@
 
           <label class="col-xs-12 col-sm-2">Marital Status</label>
           <div class="col-xs-12 col-sm-3">
-            <label><input type="checkbox" name="pic_sh_mar"  value="Married" /><span>Married</span></label>
+            <label><input type="checkbox" name="pic_sh_mar"  value="Married" checked /><span>Married</span></label>
             <label><input type="checkbox"  name="pic_sh_mar"  value="Single" /><span>Single</span></label>
             <label><input type="checkbox" name="pic_sh_mar"  value="Divorced" /><span>Divorced</span></label>
             		<label class="error" style="display: none;">This field is required.</label>
@@ -904,7 +919,7 @@
           
           <label class="col-xs-12 col-sm-1">Children</label>
           <div class="col-xs-12 col-sm-2">
-            <label><input type="checkbox" name="pic_sh_child" value="Yes" /><span>Yes</span></label>
+            <label><input type="checkbox" name="pic_sh_child" value="Yes" checked /><span>Yes</span></label>
             <label><input type="checkbox" name="pic_sh_child"  value="No" /><span>No</span></label>
             		<label class="error" style="display: none;">This field is required.</label>
           </div>
@@ -923,7 +938,7 @@
                             <option value="Ms."
 			  >Ms.</option>
                             <option value="Dr."
-			  >Dr.</option>
+			   selected>Dr.</option>
                             <option value="Prof."
 			  >Prof.</option>
                           </select>
@@ -933,14 +948,14 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">First Name</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="pic_first_name" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="pic_first_name" value="fasdf" /></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Middle Name</label>
           <div class="col-xs-12 col-sm-2"><input type="text" class="form-control" name="pic_middle_name" 
           value="" /></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Last Name</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="pic_last_name" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="pic_last_name" value="sdfasd" /></div>
           <div class="col-xs-12 col-sm-12 help-block">
          
           <label class="col-xs-12 col-sm-2 control-label text-left"></label>
@@ -954,7 +969,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label text-left">Date of Birth</label>
           <div class="col-sm-2">
-            <input id="pic_dob" class="form-control datepicker validate required" type="text" name="pic_dob" value="" />
+            <input id="pic_dob" class="form-control datepicker validate required" type="text" name="pic_dob" value="05/01/2016" />
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-sm-2 control-label text-left" >Nationality</label>
@@ -964,7 +979,7 @@
           </div>
 
           <label class="col-sm-2 control-label text-left">Passport/ID Number</label>
-          <div class="col-sm-2"><input type="text" class="form-control validate required" name="pic_pass_id" value="" /></div>
+          <div class="col-sm-2"><input type="text" class="form-control validate required" name="pic_pass_id" value="fsdfsa" /></div>
 
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           
@@ -973,7 +988,7 @@
 	<div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Designation</label>
           <div class="col-xs-12 col-sm-6">
-            <input type="text" class="form-control validate required" name="pic_dDesig" value="" />
+            <input type="text" class="form-control validate required" name="pic_dDesig" value="afdsf" />
             
             <p class="text-left help-block">(Please indicate desired Designation in company under formation)</p>
           </div>
@@ -989,14 +1004,14 @@
             <!--
          <div class="bfh-datepicker" data-name="pic_pid" data-date=""></div>
             -->
-            <input id="pic_pid" class="form-control datepicker validate required" type="text" name="pic_pid" value="" />
+            <input id="pic_pid" class="form-control datepicker validate required" type="text" name="pic_pid" value="28/12/2015" />
 
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-sm-2 control-label text-left">Passport Expiry Date</label>
           <div class="col-sm-2">
 
-          	<input id="pic_ped" class="form-control datepicker validate required" type="text" name="pic_ped" value="" />
+          	<input id="pic_ped" class="form-control datepicker validate required" type="text" name="pic_ped" value="12/01/2016" />
           </div>
         </div>
 
@@ -1008,7 +1023,7 @@
               
               <label>
               <input type="checkbox" value="Yes" class="checkme" name="pic_uae_resident"
-			  /><span>Yes</span>
+			  checked /><span>Yes</span>
             </label>
               
             <label>
@@ -1028,7 +1043,7 @@
               
             <label>
               <input type="checkbox" value="Yes" class="checkme" name="pic_uae_stamp"
-			   /><span>Yes</span>
+			   checked /><span>Yes</span>
             </label>
               
             <label>
@@ -1055,7 +1070,7 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
           <div class="col-xs-12 col-sm-10">
-            <input id="pic_ad_street2" type="text" class="form-control cad validate required" name="pic_ad_street" value=""  /></div>
+            <input id="pic_ad_street2" type="text" class="form-control cad validate required" name="pic_ad_street" value="fasdfsa"  /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
@@ -1063,18 +1078,18 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
           <div class="col-xs-12 col-sm-2">
-            <input id="pic_ad_zip2"  type="text" class="form-control cad" name="pic_ad_postal" value=""  />
+            <input id="pic_ad_zip2"  type="text" class="form-control cad" name="pic_ad_postal" value="fsdaf"  />
           </div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
           <div class="col-xs-12 col-sm-3">
-            <input id="pic_ad_state2"  type="text" class="form-control cad" name="pic_ad_state" value=""   />
+            <input id="pic_ad_state2"  type="text" class="form-control cad" name="pic_ad_state" value="fsadfds"   />
           </div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
           <div class="col-sm-3">
-            <input id="pic_ad_city2" type="text" class="form-control cad validate required" value="" name="pic_ad_city"  />
+            <input id="pic_ad_city2" type="text" class="form-control cad validate required" value="asdff" name="pic_ad_city"  />
           </div>
 
             
@@ -1085,10 +1100,10 @@
 
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input id="pic_ad_mobile2"  type="text" class="form-control cad validate required number" name="pic_ad_mobile" value=""  /></div>
+          <div class="col-xs-12 col-sm-2"><input id="pic_ad_mobile2"  type="text" class="form-control cad validate required number" name="pic_ad_mobile" value="421414"  /></div>
             
             <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input id="pic_ad_email2"  type="text" class="form-control cad validate required email" name="pic_ad_email" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input id="pic_ad_email2"  type="text" class="form-control cad validate required email" name="pic_ad_email" value="dsad@admin.com"  /></div>
 
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
@@ -1127,7 +1142,7 @@
           <legend class="legend_cl">
             Permanent Address <span class="help-inline">(Mandatory for Non-Resident Applicant)</span>&nbsp;&nbsp;
 
-            <label><input type="checkbox" value="Yes" name="pic_p_ad_same" class="pic_p_ad_same" /><span>Same as Correspondence Address</span></label>
+            <label><input type="checkbox" value="Yes" name="pic_p_ad_same" class="pic_p_ad_same" checked /><span>Same as Correspondence Address</span></label>
             </legend>
 
           </div>
@@ -1136,21 +1151,21 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
-          <div class="col-xs-12 col-sm-10"><input type="text"  id="pic_p_street2" class="form-control pad validate required" name="pic_p_street" value="" /></div>
+          <div class="col-xs-12 col-sm-10"><input type="text"  id="pic_p_street2" class="form-control pad validate required" name="pic_p_street" value="fasdfsa" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="pic_p_postal" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="pic_p_postal" value="fsdaf" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="pic_p_state" value="" /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="pic_p_state" value="fsadfds" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
-          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="pic_p_city" value="" /></div>
+          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="pic_p_city" value="asdff" /></div>
 
         </div>
 
@@ -1159,11 +1174,11 @@
 
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="pic_p_mobile" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="pic_p_mobile" value="421414" /></div>
             
             <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="pic_p_email" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="pic_p_email" value="dsad@admin.com"  /></div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
           <div class="col-xs-12 col-sm-3">
@@ -1220,7 +1235,7 @@
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 04 / 09 </td>
+          <td> 04 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -1265,22 +1280,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       APPLICATION FORM </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #fdcf08; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -1305,7 +1320,7 @@
           <div class="col-xs-12 col-sm-2">
             <label>
               <input type="checkbox" name="fpc_sh_gen" class="checkme" 
-              value="Male" /><span>Male</span>
+              value="Male" checked /><span>Male</span>
             </label>
             <label>
               <input type="checkbox" name="fpc_sh_gen" class="checkme" 
@@ -1316,7 +1331,7 @@
 
           <label class="col-xs-12 col-sm-2 text-left">Marital Status</label>
           <div class="col-xs-12 col-sm-3">
-            <label><input type="checkbox" name="fpc_sh_mar"  value="Married" /><span>Married</span></label>
+            <label><input type="checkbox" name="fpc_sh_mar"  value="Married" checked /><span>Married</span></label>
             <label><input type="checkbox"  name="fpc_sh_mar"  value="Single" /><span>Single</span></label>
             <label><input type="checkbox" name="fpc_sh_mar"   value="Divorced" /><span>Divorced</span></label>
             		<label class="error" style="display: none;">This field is required.</label>
@@ -1324,7 +1339,7 @@
           
           <label class="col-xs-12 col-sm-1">Children</label>
           <div class="col-xs-12 col-sm-2">
-            <label><input type="checkbox" name="fpc_sh_child"  value="Yes" /><span>Yes</span></label>
+            <label><input type="checkbox" name="fpc_sh_child"  value="Yes" checked /><span>Yes</span></label>
             <label><input type="checkbox" name="fpc_sh_child"  value="No" /><span>No</span></label>
             		<label class="error" style="display: none;">This field is required.</label>
           </div>
@@ -1343,7 +1358,7 @@
                             <option value="Ms."
 			  >Ms.</option>
                             <option value="Dr."
-			  >Dr.</option>
+			   selected>Dr.</option>
                             <option value="Prof."
 			  >Prof.</option>
                           </select>
@@ -1353,14 +1368,14 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">First Name</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="fpc_first_name" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="fpc_first_name" value="fasdf" /></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Middle Name</label>
           <div class="col-xs-12 col-sm-2"><input type="text" class="form-control" name="fpc_middle_name" 
           value="" /></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Last Name</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="fpc_last_name" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control validate required" name="fpc_last_name" value="sdfasd" /></div>
           <div class="col-xs-12 col-sm-12 help-block">
          
           <label class="col-xs-12 col-sm-2 control-label text-left"></label>
@@ -1374,7 +1389,7 @@
         <div class="form-group">
           <label class="col-sm-2 control-label text-left">Date of Birth</label>
           <div class="col-sm-2">
-            <input id="fpc_dob" class="form-control datepicker validate required" type="text" name="fpc_dob" value="" />
+            <input id="fpc_dob" class="form-control datepicker validate required" type="text" name="fpc_dob" value="05/01/2016" />
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-sm-2 control-label text-left" >Nationality</label>
@@ -1384,7 +1399,7 @@
           </div>
 
           <label class="col-sm-2 control-label text-left">Passport/ID Number</label>
-          <div class="col-sm-2"><input type="text" class="form-control validate required" name="fpc_pass_id" value="" /></div>
+          <div class="col-sm-2"><input type="text" class="form-control validate required" name="fpc_pass_id" value="fsdfsa" /></div>
 
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           
@@ -1393,7 +1408,7 @@
 	<div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Designation</label>
           <div class="col-xs-12 col-sm-6">
-            <input type="text" class="form-control validate required" name="fpc_dDesig" value="" />
+            <input type="text" class="form-control validate required" name="fpc_dDesig" value="afdsf" />
             
             <p class="text-left help-block">(Please indicate desired Designation in company under formation) </p>
           </div>
@@ -1409,14 +1424,14 @@
             <!--
          <div class="bfh-datepicker" data-name="fpc_pid" data-date=""></div>
             -->
-            <input id="fpc_pid" class="form-control datepicker validate required" type="text" name="fpc_pid" value="" />
+            <input id="fpc_pid" class="form-control datepicker validate required" type="text" name="fpc_pid" value="28/12/2015" />
 
           </div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-sm-2 control-label text-left">Passport Expiry Date</label>
           <div class="col-sm-2">
 
-          	<input id="fpc_ped" class="form-control datepicker validate required" type="text" name="fpc_ped" value="" />
+          	<input id="fpc_ped" class="form-control datepicker validate required" type="text" name="fpc_ped" value="12/01/2016" />
           </div>
         </div>
 
@@ -1428,7 +1443,7 @@
               
             <label>
               <input type="checkbox" value="Yes" class="checkme" name="fpc_uae_resident"
-			  /><span>Yes</span>
+			  checked /><span>Yes</span>
             </label>
               
             <label>
@@ -1448,7 +1463,7 @@
               
             <label>
               <input type="checkbox" value="Yes" class="checkme" name="fpc_uae_stamp"
-			   /><span>Yes</span>
+			   checked /><span>Yes</span>
             </label>
               
             <label>
@@ -1475,7 +1490,7 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
           <div class="col-xs-12 col-sm-10">
-            <input id="fpc_ad_street2" type="text" class="form-control cad validate required" name="fpc_ad_street" value=""  /></div>
+            <input id="fpc_ad_street2" type="text" class="form-control cad validate required" name="fpc_ad_street" value="fasdfsa"  /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
@@ -1483,18 +1498,18 @@
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
           <div class="col-xs-12 col-sm-2">
-            <input id="fpc_ad_zip2"  type="text" class="form-control cad" name="fpc_ad_postal" value=""  />
+            <input id="fpc_ad_zip2"  type="text" class="form-control cad" name="fpc_ad_postal" value="fsdaf"  />
           </div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
           <div class="col-xs-12 col-sm-3">
-            <input id="fpc_ad_state2"  type="text" class="form-control cad" name="fpc_ad_state" value=""   />
+            <input id="fpc_ad_state2"  type="text" class="form-control cad" name="fpc_ad_state" value="fsadfds"   />
           </div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
           <div class="col-sm-3">
-            <input id="fpc_ad_city2" type="text" class="form-control cad validate required" value="" name="fpc_ad_city"  />
+            <input id="fpc_ad_city2" type="text" class="form-control cad validate required" value="asdff" name="fpc_ad_city"  />
           </div>
 
         </div>
@@ -1504,12 +1519,12 @@
           
 
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input id="fpc_ad_mobile2"  type="text" class="form-control cad validate required number" name="fpc_ad_mobile" value=""  /></div>
+          <div class="col-xs-12 col-sm-2"><input id="fpc_ad_mobile2"  type="text" class="form-control cad validate required number" name="fpc_ad_mobile" value="421414"  /></div>
           
             <div class="visible-xs-block hidden-*">&nbsp;</div>
             
             <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input id="fpc_ad_email2"  type="text" class="form-control cad validate required email" name="fpc_ad_email" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input id="fpc_ad_email2"  type="text" class="form-control cad validate required email" name="fpc_ad_email" value="dsad@admin.com"  /></div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
           <div class="col-xs-12 col-sm-3">
@@ -1546,7 +1561,7 @@
           <legend class="legend_cl">
             Permanent Address <span class="help-inline">(Mandatory for Non-Resident Applicant)</span>&nbsp;&nbsp;
 
-            <label><input type="checkbox" value="Yes" name="fpc_p_ad_same" class="fpc_p_ad_same" /><span>Same as Correspondence Address</span></label>
+            <label><input type="checkbox" value="Yes" name="fpc_p_ad_same" class="fpc_p_ad_same" checked /><span>Same as Correspondence Address</span></label>
             </legend>
 
           </div>
@@ -1555,21 +1570,21 @@
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
-          <div class="col-xs-12 col-sm-10"><input type="text"  id="fpc_p_street2" class="form-control pad validate required" name="fpc_p_street" value="" /></div>
+          <div class="col-xs-12 col-sm-10"><input type="text"  id="fpc_p_street2" class="form-control pad validate required" name="fpc_p_street" value="fasdfsa" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
         </div>
 
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="fpc_p_postal" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad" name="fpc_p_postal" value="fsdaf" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="fpc_p_state" value="" /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad" name="fpc_p_state" value="fsadfds" /></div>
           <div class="visible-xs-block hidden-*">&nbsp;</div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
-          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="fpc_p_city" value="" /></div>
+          <div class="col-sm-3"><input type="text" class="form-control pad validate required" name="fpc_p_city" value="asdff" /></div>
 
         </div>
 
@@ -1579,11 +1594,11 @@
         
           <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="fpc_p_mobile" value="" /></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control pad validate required phone" name="fpc_p_mobile" value="421414" /></div>
             
         <div class="visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="fpc_p_email" value=""  /></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control pad validate required email" name="fpc_p_email" value="dsad@admin.com"  /></div>
 
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
           <div class="col-xs-12 col-sm-3">
@@ -1640,7 +1655,7 @@
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 05 / 09 </td>
+          <td> 05 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -1685,22 +1700,22 @@
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       DECLARATION </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #2E3192; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -1715,7 +1730,7 @@
           <label class="col-xs-12 col-sm-2 control-label text-left">I</label>
           <div class="col-xs-12 col-sm-10">
             <input type="text" name="dec_full_name" class="form-control" readonly 
-            value="">
+            value="Dr. fasdf sdfasd">
           </div>
         </div>
         <div class="form-group">
@@ -1723,23 +1738,23 @@
         </div>
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Street</label>
-          <div class="col-xs-12 col-sm-6"><input type="text" class="form-control" name="dec_street" readonly value="" ></div>
+          <div class="col-xs-12 col-sm-6"><input type="text" class="form-control" name="dec_street" readonly value="fasdfsa" ></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">City</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control" name="dec_city" readonly value=""></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control" name="dec_city" readonly value="asdff"></div>
         </div>
         <div class="form-group">
           <label class="col-xs-12 col-sm-2 control-label text-left">Postal Code</label>
-          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control" readonly name="dec_postal" value="" ></div>
+          <div class="col-xs-12 col-sm-2"><input type="text" class="form-control" readonly name="dec_postal" value="fsdaf" ></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">State</label>
-          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control" readonly name="dec_state" value="" ></div>
+          <div class="col-xs-12 col-sm-3"><input type="text" class="form-control" readonly name="dec_state" value="fsadfds" ></div>
           <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-1 control-label text-left">Country</label>
           <div class="col-xs-12 col-sm-3">
           
           <!--<input type="text" class="form-control" readonly name="dec_country" 
-          value="" >-->
+          value="AE" >-->
           
           <div class="bfh-selectbox bfh-countries cad" data-filter="true" data-name="dec_country" data-country="AE" data-flags="true"></div>
           
@@ -1750,13 +1765,13 @@
            <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
           <label class="col-xs-12 col-sm-2 control-label text-left">Mobile</label>
           <div class="col-xs-12 col-sm-2"><input type="text" class="form-control" readonly name="dec_mobile" 
-                                                 value=""></div>
+                                                 value="421414"></div>
             
                      <div class="col-xs-12 visible-xs-block hidden-*">&nbsp;</div>
             
             <label class="col-xs-12 col-sm-1 control-label text-left">Email</label>
           <div class="col-xs-12 col-sm-3"><input type="text" class="form-control" readonly name="dec_email" 
-                                                 value="" ></div>
+                                                 value="dsad@admin.com" ></div>
             
         </div>
 
@@ -1842,7 +1857,7 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
             <label class="col-sm-5 control-label text-left">Name in Block Letters</label>
              <div class="input-lg col-sm-7">
              <input type="text" name="pic_block_letters"  class="form-control" 
-              value="  " /></div>
+              value="DR. FASDF SDFASD" /></div>
           </div>
           <div class="form-group">
             <label class="col-sm-5 control-label text-left">Date</label>
@@ -1884,7 +1899,7 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 06 / 09 </td>
+          <td> 06 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -1929,22 +1944,22 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       FEE SCHEDULE </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #ED1E79; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -2145,7 +2160,7 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 07 / 09 </td>
+          <td> 07 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -2190,22 +2205,22 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       FEE SCHEDULE </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #ED1E79; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -2394,7 +2409,7 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 08 / 09 </td>
+          <td> 08 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -2439,22 +2454,22 @@ with Virtuzone and/or fail to pay any and all Fees that are required for the inc
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       TERMS & CONDITIONS </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #8CC63F; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -2873,7 +2888,7 @@ nominated by the Client and that is acceptable to Virtuzone.
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 09 / 09 </td>
+          <td> 09 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>
@@ -2918,22 +2933,22 @@ nominated by the Client and that is acceptable to Virtuzone.
 	<div class="row" style="height:15px;"></div>
 <div class="row app_header"
   style="width:102% !important;   height:70px !important; ">
-  <div class="col-xs-12 col-sm-4 logo"><img src="images/logo.jpg" width="405" alt="logo" /></div>
+  <div class="col-xs-12 col-sm-4 logo"><img src="/vzapp//licappres/assets/images/logo.jpg" width="405" alt="logo" /></div>
   <div class="visible-xs hidden-sm hidden-md hidden-lg">&nbsp;</div>
-  
+
   <div class="col-xs-12 col-sm-8 app_name" >
       <div class="col-xs-11 col-sm-11 trd_license"
-      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;"> 
-      
+      style="font-size:24px; font-weight:bold; background:#dcd7d2 !important;">
+
       TERMS & CONDITIONS </div>
-    
+
     <div class="col-xs-1 col-sm-1 orng">
     <div style="display: inline-block; background: #8CC63F; margin-left: 15%;  width:22px;
                  height: 100%;" class="ycldiv">&nbsp;</div></div>
-                 
-    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;"> 
+
+    <!--<div class="col-xs-11 col-sm-11" style="font-size:24px;   font-weight:normal;text-align:right;">
     LICENSE APPLICATION </div>-->
-    
+
     <div class="col-xs-1 col-sm-1">&nbsp;</div>
   </div>
 </div>
@@ -3235,7 +3250,7 @@ fullest extent permitted by the laws of the United Arab Emirates.
             <label class="col-sm-5 control-label text-left">Name in Block Letters</label>
              <div class="input-lg col-sm-7">
              <input type="text" name="pic_block_letters"  class="form-control" 
-              value="  " /></div>
+              value="DR. FASDF SDFASD" /></div>
           </div>
           <div class="form-group">
             <label class="col-sm-5 control-label text-left">Date</label>
@@ -3279,7 +3294,7 @@ fullest extent permitted by the laws of the United Arab Emirates.
         
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">PAGE</td>
-          <td> 10 / 09 </td>
+          <td> 10 / 10 </td>
         </tr>
         <tr>
           <td style="width: 110px; font-size:12px !important; font-weight:normal !important;">VERSION</td>

@@ -605,9 +605,10 @@ $(document).ready(function(){
       alert("You must agree to terms and conditions");
       return false;
     }
+    var link = $(this).data('link');
     $.post('licapp/initform?la_name=' + la_name, $('#msform').serialize(), function(response){
       if(response.status === 'success'){
-//        location.href = 'form/application.php';
+        location.href = link;
       }
     });
     return false;
