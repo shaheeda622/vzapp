@@ -1,0 +1,92 @@
+/**
+* CI MCS Extension
+*
+* Cascading style sheet default > style.css to be used with CI MCS Extension
+*
+* @package		CI MCS Extension
+* @author		Jason Davey
+* @copyright	Copyright (C) 2015 Frozen Tiger Ltd.
+* @license		http://www.exoiz.com/mcs_license
+* @Version		3.0.0
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*/
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #BBBBBB;
+}
+.logo_container {
+	margin: 6px 0 0 0;
+    overflow: hidden;
+	left: 0;
+	position: fixed;
+}
+.nav_spacing {
+	margin-right: 6px
+}
+.input_xs {
+  max-width: 50px;
+}
+.input_sm {
+  max-width: 100px;
+}
+.input_default {
+  max-width: 200px;
+}
+.input_lg {
+  max-width: 300px;
+}
+.nav_margin {
+	margin: 0 10px 0 0;
+}
+.nomarg {
+	margin-bottom: 0;
+}
+.nopad {
+	padding-bottom: 0;
+}
+.placeholder {
+	margin: 0;
+}
+.task_header {
+	padding: 0 0 10px 0;
+}
+.copy-text {
+	margin: 50px 0 0 0;
+	color: #222222;
+	font-size: 12px;
+}
+
+.copy-text a {
+	color: #222222;
+	font-size: 12px;
+}
+
+.copy-text a:hover {
+	color: #222222;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+table.table_sortable thead tr .s_header {
+    background-image: url("../../images/default/sort-default.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+table.table_sortable thead tr .s_header a {
+    display: block;
+}
+table.table_sortable thead tr .s_asc {
+    background-image: url("../../images/default/sort-asc.gif");
+}
+table.table_sortable thead tr .s_desc {
+    background-image: url("../../images/default/sort-desc.gif");
+}

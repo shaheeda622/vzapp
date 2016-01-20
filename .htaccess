@@ -1,0 +1,17 @@
+    Options +FollowSymLinks
+
+    RewriteEngine On
+
+    # If the file or directory exists, show it
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^(.+) - [PT,L]
+    # Blank queries get sent to the index
+    RewriteRule ^$ index.php [L]
+
+    # All other queries get sent to the index as index.php/whatever
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+    RewriteCond $1 !^(index\.php|images|robots\.txt|js|css|user_guide)
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+
