@@ -1,0 +1,56 @@
+.clearfix{float: none;}
+body{ padding:0px; margin:0px; background:#FFFFFF;}
+.container{ background:#FFF;min-height:120px;margin: 0 auto;}
+.app_header{margin-top: 30px;margin-bottom: 30px;}
+.app_header .logo{padding-left: 0;padding-right: 0;}
+.app_header .logo img{width: 100%;}
+.app_header .app_name{padding-left: 0;padding-right: 0;}
+.app_header .nvr1{background:#DCDEDD; text-align:right; font-weight:bold; height:44px; line-height:44px; font-size:28px;}
+.app_header .nvr2{background:#FFFFFF; text-align:right; height:44px; line-height:44px; font-size:20px;}
+.app_header .orng{background:#FFFFFF; height:44px;padding-right: 0;padding-left:0}
+@media (min-width: 800px){
+  .app_header .logo img{ margin-left: 1%;}
+  .app_header .logo img{width:97%;}
+}
+@media (min-width: 768px){
+  .app_header .logo img{width:97%;}
+}
+@media (max-width: 480px){
+  .app_header .nvr1{ margin-left:0px; width: 90.4%;}
+}
+.app_footer{margin-bottom:0px;}
+.app_footer .strip-dark-grey{background:#8f8e89;}
+.app_footer .strip-light-grey{background:#dcd7d3;width: 104.5%;position: relative;left: -13px;}
+.app_footer .strip-red{background:#F01130;}
+
+.app_footer .trd_license{
+  font-weight:bolder;
+  font-size:27px;
+  padding:0px !important;
+  color:#f01130;
+  padding-top:0px !important;
+  padding-left:14px !important;
+}
+.app_footer .app{font-size: 22px;  margin-top:-4px; font-weight:lighter;  }
+.app_footer .gray-out{color:#979893; padding:6px 0px !important; font-size:12px; font-weight: normal; }
+.app_footer .huge{font-size:35px; font-weight:bolder; padding:0px !important; color:#f01130; padding-top:4px !important;line-height:1;}
+.app_footer .address{padding-top:0px;}
+.app_footer .link{font-weight:bold;color:#f01130;}
+.app_footer div:first-child{padding-right: 6px;padding-left: 6px;}
+.app_footer table.tbl1{
+  margin:0px !important;
+  color:#979893 !important;
+  margin-top:4px !important;
+  padding: 0 !important;
+  font-size:12px !important;
+  line-height:1.2;
+  font-weight:normal !important;
+}
+.app_footer table.tbl1 td:first-child{width: 110px; font-size:12px !important; font-weight:normal !important;}
+.visaform{width: 90%;margin: auto;background:#FFFFFF;}
+.visaform .heading{color:#F01130;padding-left: 0;margin-top: 20px;font-weight: bold;font-size: 16px;}
+.visaform .agreement{text-align: justify; color:#979893;}
+.visaform .sign-line{padding: 0;border-bottom: 1px #979893 solid;}
+.text-left{text-align: left !important;}
+.np-left{padding-left:0;}
+.np-right{padding-right:0;}

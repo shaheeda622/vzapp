@@ -36,7 +36,24 @@ class licapp extends MX_Controller{
   }
 
   public function index(){
-    echo modules::run('_main/render', $this->load->view('start', '', TRUE));
+    $url = url();
+    $content['header_tags'] = '<link href="' . $url . 'licappres/assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+<link rel="stylesheet" href="' . $url . 'licappres/assets/css/main.css">
+<link rel="stylesheet" href="' . $url . 'licappres/form/css/styles.css">
+<script src="' . $url . 'licappres/assets/js/bootstrap-datepicker.min.js"></script>
+<script src="' . $url . 'licappres/assets/js/bootstrap-datepicker.en-GB.min.js" charset="UTF-8"></script>
+<style>
+  body{min-height: 480px !important;}
+  .form-control{background:#FFFFFF !important;}
+</style>
+<link rel="stylesheet" href="' . $url . 'licappres/form/formhelpers/dist/css/bootstrap-formhelpers.min.css">
+<script src="' . $url . 'licappres/form/formhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
+<script src="' . $url . 'licappres/form/formhelpers/js/lang/en_US/bootstrap-formhelpers-countries.en_US.js"></script>
+<script src="' . $url . 'licappres/form/formhelpers/js/bootstrap-formhelpers-countries.js"></script>
+<script src="' . $url . 'licappres/assets/js/jqvalidation/jquery.validate.min.js"></script>
+<script src="' . $url . 'licappres/assets/js/main.js" type="text/javascript"></script>';
+    $content['content'] = $this->load->view('start', '', TRUE);
+    echo modules::run('_main/render', $content);
   }
 
   public function initform(){
@@ -279,10 +296,6 @@ class licapp extends MX_Controller{
 
     header('Content-Type: application/json');
     echo json_encode($response);
-  }
-
-  public function start(){
-    $this->load->view('start');
   }
 
   public function submit(){

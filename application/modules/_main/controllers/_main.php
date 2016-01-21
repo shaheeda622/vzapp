@@ -36,7 +36,8 @@ class _main extends MX_Controller{
   }
 
   public function render($content){
-    $data['content'] = $content;
+    $data['header_tags'] = empty($content['header_tags']) ? '' : $content['header_tags'];
+    $data['content'] = empty($content['content']) ? '' : $content['content'];
     $this->load->view('template', $data);
   }
 

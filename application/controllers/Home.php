@@ -11,10 +11,8 @@ class Home extends MX_Controller{
       header('Location: ' . url('login'));
     }
     else{
-      $data = array();
-      $data['userinfo'] = $this->master->get_userinfo();
-      $data['meta']['title'] = 'Home';
-      echo modules::run('_main/render', $this->load->view('home', '', TRUE));
+      $content['content'] = $this->load->view('home', '', TRUE);
+      echo modules::run('_main/render', $content);
     }
   }
 

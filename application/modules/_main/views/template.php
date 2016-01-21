@@ -19,22 +19,9 @@
     <script src="<?php echo url(); ?>scripts/bootstrap.js"></script>
     <script src="<?php echo url(); ?>scripts/respond.js"></script>
     <script src="<?php echo url(); ?>scripts/jquery.scrollbar.min.js"></script>
-
-    <link href="<?php echo url(); ?>licappres/assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo url(); ?>licappres/assets/css/main.css">
-    <link rel="stylesheet" href="<?php echo url(); ?>licappres/form/css/styles.css">
-    <script src="<?php echo url(); ?>licappres/assets/js/bootstrap-datepicker.min.js"></script>
-    <script src="<?php echo url(); ?>licappres/assets/js/bootstrap-datepicker.en-GB.min.js" charset="UTF-8"></script>
-    <style>
-      body{min-height: 480px !important;}
-      .form-control{background:#FFFFFF !important;}
-    </style>
-    <link rel="stylesheet" href="<?php echo url(); ?>licappres/form/formhelpers/dist/css/bootstrap-formhelpers.min.css">
-    <script src="<?php echo url(); ?>licappres/form/formhelpers/dist/js/bootstrap-formhelpers.min.js"></script>
-    <script src="<?php echo url(); ?>licappres/form/formhelpers/js/lang/en_US/bootstrap-formhelpers-countries.en_US.js"></script>
-    <script src="<?php echo url(); ?>licappres/form/formhelpers/js/bootstrap-formhelpers-countries.js"></script>
-    <script src="<?php echo url(); ?>licappres/assets/js/jqvalidation/jquery.validate.min.js"></script>
-    <script src="<?php echo url(); ?>licappres/assets/js/main.js" type="text/javascript"></script>
+    <?php if(! empty($header_tags)){
+      echo $header_tags;
+    } ?>
     <style type="text/css">
       .overlay {
         position: fixed;
@@ -74,7 +61,7 @@
                 <li><a href="<?php echo url('profile'); ?>" class="clrbrd2">Profile</a></li>
                 <li><a href="<?php echo url('licapp'); ?>" class="clrbrd3">License Application</a></li>
                 <li><a href="<?php echo url('visaapp'); ?>" class="clrbrd4">Visa Application</a></li>
-                
+
               </ul>
             </div>
             <div class="hidden-xs">
