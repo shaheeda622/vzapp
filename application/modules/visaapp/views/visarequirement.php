@@ -348,5 +348,116 @@ at least another 7 months at the time of visa application. The Passport should h
         </div>
     </div> 
     
+    
+    <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;III. </div>
+        <div class="col-sm-10 colWidth10" ><p>Designations for Employees and Shareholders that are not PIC</p></div>
+        
+        <div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+
+        <div class="col-sm-11 " >
+                <div class="col-sm-6">
+                <ul>
+                <li>Artist </li>
+                <li> Administrative Assistant</li>
+                <li>Executive Assistant (Experience Letter Required)</li>
+                <li>Graphic Designer</li>
+                <li>HR Clerk</li>
+                <li>Marketing Assistant (Experience Letter Required) </li>
+                </ul>
+               </div>
+               
+               <div class="col-sm-6">
+                <ul>
+                <li>Marketing Representative </li>
+                <li>Office Assistant</li>
+                <li>Office Clerk</li>
+                <li>Personal Assistant (Experience Letter Required)</li>
+                <li>Photographer </li>
+                <li>Sales Representative </li>
+                </ul>
+               </div>
+        </div>
+    </div> 
+    
+    
+    
+    <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;IV. </div>
+        <div class="col-sm-10 colWidth10" ><p>Designation for Employees and Shareholders that are not the PIC </p> </div>
+        
+
+
+        
+        <div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-11 colWidth10" >
+                <div class="col-sm-4">
+                <ul>
+                <li>Accountant </li>
+                <li> Operations Manager</li>
+                <li>Computer Programmer</li>
+                <li>Sales Executive</li>
+                <li>Finance Manager </li>
+                <li>Training Manager</li>
+                </ul>
+               </div>
+               
+               <div class="col-sm-4">
+                <ul>
+                <li>Marketing Executive </li>
+                <li>Business Development Manager</li>
+                <li>Relationship Manager</li>
+                <li>Event Manager </li>
+                <li>Senior Consultant </li>
+                 <li>Marketing Manager</li>
+                </ul>
+               </div>
+               
+               <div class="col-sm-4">
+                <ul>
+                <li>Business Consultant</li>
+                <li>Project Manager</li>
+                <li>Computer Engineer</li>
+                <li>Sales Manager</li>
+                <li>Information Systems Expert </li>
+                </ul>
+               </div>
+			
+        </div>
+ 
+    </div> 
+
+
+	<div class="form-group row">    
+    <div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-10 colWidth10" >
+        <p> The above-mentioned designations DO require a legalized and translated University Degree. The Designations listed above are the
+ONLY available designations.</p>
+		</div>
+    </div> 
+    
+    <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;V. </div>
+        <div class="col-sm-10 colWidth10" > <p> Important Notes  </p>
+        	<ol>
+            <li> <p> If the applicant does not hold a managerial designation and wishes to sponsor his family, then his designation should be selected as “Sales Representative” or “Marketing Representative”. Please note that this designation can only be selected for applicants
+between 18 and 50 years of age. </p> </li>
+
+			<li> <p> Visa applicants above 60 years of age are required to be the Person in Charge or Shareholder and must provide a legalized and
+translated University Degree. The acceptance of visa-applicants above 60 years of age is at the sole discretion of the concerned
+Authorities. </p> </li>
+
+			<li> <p> Certain designations cannot sponsor dependents. Please discuss with your Visa Consultant if the designation you have selected
+is eligible for dependent sponsorship. </p> </li>
+
+            </ol>
+           
+        </div>
+    </div>
+    
   </fieldset>
 </div>
