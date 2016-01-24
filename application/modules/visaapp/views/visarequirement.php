@@ -319,6 +319,34 @@ at least another 7 months at the time of visa application. The Passport should h
       </div>
     </div>
     
+    <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;I. </div>
+        <div class="col-sm-10 colWidth10" >Designation for Person in Charge (PIC) <br/> 
+        	<ul>
+            <li>CEO (Cannot sponsor dependents) </li>
+            <li> Executive Director </li>
+            <li> General Manager </li>
+            </ul>
+           <p>
+           The above-mentioned designations DO NOT require a University Degree. Please note that the Person 
+           in Charge needs to select the same designation that has previously been selected in the Trade License.
+           </p>
+        </div>
+    </div> 
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;II. </div>
+        <div class="col-sm-10 colWidth10" >Designation exclusively for Person in Charge (PIC) or Shareholders<br/> 
+        	<ul>
+            <li>General Manager </li>
+            </ul>
+           <p>
+           The above mentioned designation DOES require a legalized and translated University Degree . A Shareholder can only select this designation as long as the PIC is not using the same designation.
+           </p>
+        </div>
+    </div> 
     
   </fieldset>
 </div>
