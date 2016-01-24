@@ -2,45 +2,90 @@
     
  <fieldset class="form-horizontal">
     
-     
-
- 
-  
-
     
-
-    <label class="col-xs-12 heading">Address Details</label>
-    <div class="form-group">
-      <label class="col-xs-12 col-sm-2 control-label text-left">UAE Address</label>
-      <label class="col-xs-12 col-sm-2 control-label text-left">Address Line 1</label>
-      <div class="col-xs-12 col-sm-8">
-        <input type="text" class="form-control" name="visaform[uae_address][addresss_line_1]" value="" />
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-xs-12 col-sm-2 control-label text-left">&nbsp;</label>
-      <label class="col-xs-12 col-sm-2 control-label text-left">Address Line 2</label>
-      <div class="col-xs-12 col-sm-8">
-        <input type="text" class="form-control" name="visaform[uae_address][addresss_line_2]" value="" />
-      </div>
-    </div>
-    
-    
-   
- 
-   
-    
-    <p class="agreement">
-      I/We the undersigned hereby acknowledge that the Visa for the aforementioned applicant is required solely for the legitimate purpose of our company and the company activity licensed by Fujairah
-      Media Free Zone – Creative City. I/We acknowledge that in the case that any information provided during the Visa application process is found to be false, untrue or misleading, I/WE may be held
-      personally liable, Virtuzone may have an obligation to report such a case to the concerned Authority and/or Government and that such a case may result in an immediate cancellation of the Trade
-      License and all Visa issued under the respective Trade License. I/We acknowledge that Virtuzone processes Visa applications only after all Fees for Virtuzone Services have been paid in full.
-      Virtuzone will not be responsible for any Fees (including overstay fines and other penalties) levied by the Authority and/or Government due to non-payment of Service related Fees. I/We
-      acknowledge that Virtuzone does not guarantee specific timeframes during the Visa application process and that all Visa applications are subject to the approval of the concerned Authority and
-      Government. I/We acknowledge that we will not charge any Visa related Fees to our employees. In the case that Visa related Fees have been charged to our employees we acknowledge that
-      Fujairah Media Free Zone – Creative City reserves the right to cancel the Trade License and all Visa issued under the respective Trade License. I/We further acknowledge that any Fees (including
-      overstay fines and other penalties) incurred during the Visa application process will have to be borne by the undersigned.
+    	<style type="text/css"> 
+			.colWidth1{ width:5.5% !important; }
+			.colWidth10{ width:88% !important; }
+        </style>
+        
+    <p>
+     Dear Valued Client,
     </p>
+    
+    <p>
+     The below outlines the requirements in order to obtain a UAE Residence Visa through Fujairah Creative City.
+    </p>
+    <p>
+    To effectively manage the entire process it is mandatory to schedule an appointment with one of our Visa Consultants who will assist you to obtain
+your UAE Residence Visa.
+    </p>
+    
+    <p>
+    Please be informed that any future travel plans should be mentioned to your Visa Consultants in advance.
+    </p>
+    <p>
+Please note that all applications are subject to approval from the Authorities or the Government.
+    </p>
+    
+    <div class="form-group row">
+      <div class="col-sm-1 colWidth1" style="color:#F00408"> A </div>
+      <div class="col-sm-11" >
+      <span style="color:#F00408">Entry Permit Requirements </span><br/>
+       Documents Required for Entry Permit:
+      </div>
+    </div>
+    
+    <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;1 </div>
+        <div class="col-sm-10 colWidth10" > Original Visa Application (typed and stamped); </div>
+    </div>
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;2 </div>
+        <div class="col-sm-10 colWidth10" >
+        Passport Copy (colour) (Please note that no temporary Passports will be accepted
+         and that the presented Passport should be valid for at least another 7 months at the 
+         time of visa application. The Passport should have at least three (3) empty pages.) </div>
+    </div>
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;3 </div>
+        <div class="col-sm-10 colWidth10" > 
+            UAE Entry Stamp Copy (colour) or; <br/>
+            Visit Visa Copy (colour) or; <br/>
+            Tourist Visa Copy (colour) or; <br/>
+            Visa Cancellation Form and Cancelled Residence Visa (colour)
+		</div>
+    </div>
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;4 </div>
+        <div class="col-sm-10 colWidth10" >Company License Copy (colour) valid for at least 
+        another 90 days at the time of 
+        visa application, or evidence that renewal of the Trade License is under process. </div>
+    </div>
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;5 </div>
+        <div class="col-sm-10 colWidth10" >Immigration Card Copy Please note that an expired 
+        Immigration Card will result in a visa application being rejected. </div>
+    </div>
+    
+     <div class="form-group row">
+		<div class="col-sm-1 colWidth1">&nbsp;&nbsp; </div>
+        <div class="col-sm-1 colWidth1">&nbsp;6 </div>
+        <div class="col-sm-10 colWidth10" >
+        Employment Contract (2 original sets) <br/>
+       &nbsp; • &nbsp;Complete editable PDF <br/>
+       &nbsp; • &nbsp; Stamp each page with company stamp <br/>
+       &nbsp; • &nbsp; Initial every page and sign last page 
+		</div>
+    </div>
     
   </fieldset>
 </div>

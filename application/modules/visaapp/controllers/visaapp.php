@@ -18,7 +18,7 @@ class visaapp extends MX_Controller{
         $content['header_tags'] = '<link rel="stylesheet" href="' . $url . 'visaappres/css/font-awesome.min.css">
         <link rel="stylesheet" href="' . $url . 'visaappres/css/bootstrap.min.css">
         <link rel="stylesheet" href="' . $url . 'visaappres/css/main.css">';
-        $content['content'] = $this->load->view('visaform', '', TRUE);
+        $content['content'] = $this->load->view('index', '', TRUE);
         echo modules::run('_main/render', $content);
    }
 
